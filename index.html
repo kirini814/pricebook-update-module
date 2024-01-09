@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRICEBOOK UPDATE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="header">PRICEBOOK UPDATE</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data" onsubmit="handleUpload(event)" class="upload-form">
+        <label for="file1" class="file-label">1번 파일 (xlsx):</label>
+        <input type="file" id="file1" name="file1" accept=".xlsx" required class="file-input">
+        <br>
+
+        <label for="file2" class="file-label">2번 파일 (xml):</label>
+        <input type="file" id="file2" name="file2" accept=".xml" required class="file-input">
+        <br>
+
+        <input type="submit" value="업로드" class="submit-button">
+
+
+        <div id="downloadLinkContainer">
+            <a id="downloadLink" href="#" download>XML 파일 다운로드</a>
+        </div>
+
+    </form>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
